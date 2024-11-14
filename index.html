@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Connect Doc</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Connect Doc Logo"></a>
+            <div class="navigate" id="navigateLink">
+                <button class="close-btn" onclick="hidemenu()"><i class="fa fa-times"></i></button>
+                <h1 class="site-title">CONNECT DOC</h1>
+                <p class="site-tagline">Seamlessly Connect, Record, and Book Your Health Journey Online</p>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <button class="menu-btn" onclick="showmenu()"><i class="fa fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About</h1>
+        <p>Connect Doc is dedicated to modernizing healthcare by offering a platform for users to access medical
+            reports, track vitals, contact hospitals, and schedule appointments seamlessly. Our platform leverages
+            AI technology to provide personalized health advice and enables better communication between patients and
+            healthcare providers.</p>
+        <a href="contactus.html" class="button">Contact Us</a>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="content">
+        <h1>"Empowering Your Health Journey Online"</h1>
+        <p>With Connect Doc, you can easily access vital health information, track your well-being, and stay in touch
+            with healthcare professionals—all from one platform.</p>
+        <div class="row">
+            <div class="content-column">
+                <h3>Online Medical Records</h3>
+                <p>Access your medical history, including diagnoses, medications, and lab results, all in one secure
+                    platform. This facilitates better coordination of care and empowers you to take control of your
+                    health.</p>
+            </div>
+            <div class="content-column">
+                <h3>Today's Appointments</h3>
+                <p>View, manage, and get reminders about your appointments. You can reschedule or cancel with ease,
+                    ensuring you never miss an appointment.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content-column">
+                <h3>Hospitals</h3>
+                <p>Find detailed information about hospitals near you, compare facilities, and even book appointments
+                    online. Virtual tours are also available to help you prepare for your visit.</p>
+            </div>
+            <div class="content-column">
+                <h3>Chatbot Assistance</h3>
+                <p>Our chatbot provides instant answers to your medical queries, reducing wait times and helping you
+                    find the right information quickly, 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vitals Section -->
+    <section class="vitals">
+        <h1>"Track Your Vitals, Transform Your Health"</h1>
+        <p>Monitor your health vitals online for early detection of potential issues. Stay proactive and manage your
+            health with ease.</p>
+        <a href="#" class="vitalsbutton">Check Vitals</a>
+    </section>
+
+    <!-- Records Section -->
+    <section class="records">
+        <h1>"Your Health History, Secure and Accessible Anytime"</h1>
+        <p>Access and manage your medical records securely online, ensuring that critical health information is always
+            available when needed.</p>
+        <a href="#" class="recordsbutton">Check Records</a>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <h1>"Book Your Doctor's Appointment Effortlessly Online"</h1>
+        <p>Schedule your doctor's appointments online with ease, ensuring timely medical care and better management of
+            your health.</p>
+        <a href="#" class="schedulebutton">Book Appointments</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>"Find and Contact Hospitals Near You with Ease"</h1>
+        <p>Get in touch with healthcare providers directly through our platform, enabling faster access to care and
+            improving patient outcomes.</p>
+        <a href="contact.html" class="contactbutton">Contact</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p class="footer-text">At Connect Doc, we are committed to providing compassionate and innovative healthcare
+            solutions to our community. Our professional team ensures your health and well-being through personalized
+            care.</p>
+        <div class="icons">
+            <a href="#" class="icon"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="icon"><i class="fa fa-github"></i></a>
+            <a href="#" class="icon"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        var navigateLink = document.getElementById("navigateLink");
+
+        function showmenu() {
+            navigateLink.style.right = "0";
+        }
+
+        function hidemenu() {
+            navigateLink.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Connect Doc</title>
+</head>
+
+<body>
+    <section class="login-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="navigate" id="navigateLink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <h1 style="font-family: Times New Roman">CONNECT DOC</h1>
+                <p>Seamlessly Connect, Record, and Book Your Health Journey Online</p>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+
+    <div id="LogIn" class="log-in">
+        <form class="login-content cartoon" action="/action_page.php" method="post">
+            <div class="container">
+                <span onclick="document.getElementById('LogIn').style.display='none'" class="close-login"
+                    title="close-login-in">&times;</span>
+                <img src="images/bitmoji.png" class="bitmoji" alt="Bitmoji">
+            </div>
+
+            <div class="login-container">
+                <label for="username"><b>Username:</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <br>
+                <label for="pw-login"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="pw-login" required>
+                <br>
+                <center>
+                    <button type="submit">Login</button>
+                </center>
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="rememberme"> Remember me
+                </label>
+            </div>
+
+            <div class="login-container" style="background-color: white">
+                <center>
+                    <span class="pw-login">Forgot <a href="#">password?</a></span>
+                </center>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var login = document.getElementById('LogIn');
+        window.onclick = function (event) {
+            if (event.target == login) {
+                login.style.display = "none";
+            }
+        }
+    </script>
+
+    <section class="footer">
+        <p>
+            <center>About Us</center><br>
+            At Connect Doc, we are dedicated to providing compassionate and comprehensive medical care to our community.
+            <br>Our experienced team of professionals is committed to ensuring your health and well-being through
+            personalized and innovative healthcare solutions.
+        </p>
+
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </section>
+
+</body>
+
+</html>

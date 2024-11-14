@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Connect Doc</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="navigate" id="navigateLink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <h1 style="font-family: Times New Roman">CONNECT DOC</h1><br>
+                <p>Seamlessly Connect, Record, and Book Your Health Journey Online</p>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        
+        <div class="donation">
+            <p style="font-size: 30px;">DONATE:</p>
+            <hr>
+        </div>
+        <div class="donationbutton">
+            <p><a href="#" class="donatebutton50"><i class="fa fa-inr"></i> 50</a></p>
+            <p><a href="#" class="donatebutton100"><i class="fa fa-inr"></i> 100</a></p>
+            <p><a href="#" class="donatebutton200"><i class="fa fa-inr"></i> 200</a></p>
+            <p><a href="#" class="donatebuttonother">Other</a></p>
+        </div>
+
+        <br><br>
+
+        <div class="donateinfo">
+            <p>GIFT PREFERENCES:</p>
+            <hr>
+            <form>
+                <label for="to">I wish to donate towards:</label>
+                <select name="to" id="to">
+                    <option value="">Select an option</option>
+                    <option value="Kidney care">Kidney care</option>
+                    <option value="Medical research">Medical research</option>
+                    <option value="Cancer service">Cancer service</option>
+                    <option value="Mental health">Mental health</option>
+                    <option value="Intensive care">Intensive care</option>
+                </select>
+                <br><br>
+
+                <p>Leave a comment:</p>
+                <textarea name="comment" rows="5" cols="25" placeholder="Write your comment here..."></textarea>
+                <br><br>
+
+                <p>DONOR DETAILS:</p>
+                <hr>
+                <p>Name: <input type="text" name="donarname" id="donarname" required></p>
+                <p>Phone no: <input type="number" name="donarnum" id="donarnum" required></p>
+                <p>Email: <input type="email" name="donaremail" id="donaremail" required></p>
+                <p>Country: <input type="text" name="donarcou" id="donarcou" required></p>
+                <p>State: <input type="text" name="donarsta" id="donarsta" required></p>
+                <p>City: <input type="text" name="donarcity" id="donarcity" required></p>
+                <p>Address:</p>
+                <textarea rows="5" cols="35" placeholder="Enter your address here..."></textarea>
+                <p>
+                    <input type="checkbox" name="donardetails" id="donardetails">
+                    <label for="donardetails">I would like to keep the donor details anonymous.</label>
+                </p>
+            </form>
+            <br><br>
+
+            <center>
+                <div class="donatedonation">
+                    <a href="#" class="donatebutton">DONATE</a>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p><center><h2>About Us</h2></center><br>
+        At Connect Doc, we are dedicated to providing compassionate and comprehensive medical care to our community. Our experienced team of professionals is committed to ensuring your health and well-being through personalized and innovative healthcare solutions.
+        
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        </p>
+    </section>
+</body>
+</html>
